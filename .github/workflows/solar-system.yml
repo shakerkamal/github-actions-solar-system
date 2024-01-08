@@ -21,9 +21,6 @@ jobs:
               MONGO_URI: mongodb://localhost:27017/superData
               MONGO_USERNAME: non-prod-user #${{ vars.MONGO_USERNAME }}
               MONGO_PASSWORD: non-prod-password #${{ secrets.MONGO_PASSWORD }}
-            options:
-              --health-cmd mongo
-              --health-interval 3s
             ports:
               - 27017:27017
             
